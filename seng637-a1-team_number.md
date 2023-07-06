@@ -36,7 +36,11 @@ functional testing before this lab
 
 # High-level description of the exploratory testing plan
 
-Text…
+1. Try all major functions
+2.     (withdraw, deposit, transfer, balance inquir).
+3. With each major function attempt to perform legal and illegal actions (withdraw more than allowed)
+4. Test different ATM setups (no money, extremely high amount, etc)
+5. 
 
 # Comparison of exploratory and manual functional testing
 
