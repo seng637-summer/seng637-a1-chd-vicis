@@ -46,14 +46,14 @@ Before undertaking this lab, the team members had a theoretical understanding of
 
 Below summarizes the groups test plan for exploratory testing followed by the two pair groups.  As testing was performed issues were created in jira to log potential bugs.
 
-## General Approach
+### General Approach
 1. Read and understand the system's high level requirements found in Appendix B and make note of potential areas for bugs 
 2. Familiarization with the ATM System - perform a single run-through via a transaction (deposit) as described in the README
 3. Explore standard functionalities of a user such as performing transactions
 4. Explore standard functionalities of an operator such as entering how many $20 bills are in the ATM
 5. Explore non-standard functionalities and attempt operations that shouldn't be allowed
 
-## Test Cases & ATM Requirements Targeted
+### Test Cases & ATM Requirements Targeted
 Card Validation & Pin Verification
 -    Test valid card
 -    Test invalid card
