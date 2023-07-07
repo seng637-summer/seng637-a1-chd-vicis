@@ -34,7 +34,7 @@ In this lab, Team 2 of SENG-637 conducted software testing on an ATM simulation 
 
 Throughout the lab, the team successfully conducted exploratory, manual scripted, and regression testing, which resulted in the discovery of 21 unique bugs. These bugs were documented using Jira, a professional issue tracking system. The team found the experience of using Jira valuable, collaborated on pair testing for the first time, and composed practical bug reports. Additionally, they gained insights into the strengths and weaknesses of various testing approaches and how they complement each other.
 
-Before undertaking this lab, the team members had a theoretical understanding of software testing from the class lectures but lacked practical experience. Their testing experience was limited to ad-hoc testing while developing programs during undergraduate and graduate courses. Furthermore, the team had no prior exposure to a professional issue tracker such as Jira.
+Before undertaking this lab, the team members had a brief understanding of software testing including exploratory and manual function testing from the class lectures but lacked practical experience. More specifically the team members went through examples in class on how to perform a manual scripted test by recording the inital state, expected output vs actual and how to reproduce the bug of a software system.  Aside from the class examples the team's only testing experience was limited to ad-hoc testing while developing programs during undergraduate and graduate courses. Furthermore, the team had no prior exposure to a professional issue tracker such as Jira.
 
 # High-level description of the exploratory testing plan
 
