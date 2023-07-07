@@ -12,10 +12,6 @@
 
 
 **Table of Contents**
-
-(When you finish writing, update the following list using right click, then
-“Update Field”)
-
 [1. Introduction](#introduction)
 
 [2. High-level description of the exploratory testing plan](#high-level-description-of-the-exploratory-testing-plan)
