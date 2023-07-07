@@ -1,4 +1,4 @@
->   **SENG 637 - Dependability and Reliability of Software Systems**
+   **SENG 637 - Dependability and Reliability of Software Systems**
 
 **Lab. Report \#1 – Introduction to Testing and Defect Tracking**
 
