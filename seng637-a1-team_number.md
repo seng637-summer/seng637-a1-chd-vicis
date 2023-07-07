@@ -12,6 +12,7 @@
 
 
 **Table of Contents**
+
 [1. Introduction](#introduction)
 
 [2. High-level description of the exploratory testing plan](#high-level-description-of-the-exploratory-testing-plan)
