@@ -35,20 +35,14 @@ learned	1](#_Toc439194682)
 An introduction of your lab work, and what you knew about exploratory and manual
 functional testing before this lab
 
-In this lab SENG-637 team 1 performed software testing on an ATM simulation system which can be found [here](https://github.com/seng637-summer/seng637-a1-chd-vicis/blob/main/seng637-a1-artifacts.zip).  The main purpose of the lab was to take the lessons and techniques learned in the lectures and apply them them in a practical software testing scenario.  The team's main goal when testing was to find and document as many bugs as possible and so performed testing in three phases: exploratory, manual function testing and regression testing.  All stages of testing were documented using the Jira platform 
+In this lab, Team 1 of SENG-637 conducted software testing on an ATM simulation system, which can be accessed [here](https://github.com/seng637-summer/seng637-a1-chd-vicis/blob/main/seng637-a1-artifacts.zip).  The primary objective of the lab was to apply the lessons and techniques learned in the lectures to a practical software testing scenario. The team focused on achieving three specific goals:
+1. Acquire practical experience in testing a software system
+2. Understand and gain experience in three different types of testing: exploratory, manual scripted, and regression testing
+3. Utilize and become familiar with a professional issue tracking system such as Jira 
 
-Before the lab the team was familiar with the concepts of exploratory from the class lectures but possessed no practical experience.  The only testing experience within the group was from ad-hoc testing while creating programs during 
+Throughout the lab, the team successfully conducted exploratory, manual scripted, and regression testing, which resulted in the discovery of 21 unique bugs. These bugs were documented using Jira, a professional issue tracking system. The team found the experience of using Jira valuable, collaborated on pair testing for the first time, and composed practical bug reports. Additionally, they gained insights into the strengths and weaknesses of various testing approaches and how they complement each other.
 
-
-exploratory, manual function testing and regression testing on a simulated ATM application.  The main goal of the lab was to take what was learned in the lectures and apply the techniques learned onto a real software system.  :
--   To gain practical experience testing a piece of software and connect what was taught in class
--  Understand and expereince exploratory, manual scripted, and regression testing
--   Obtain experience with a professional and industry used issues tracking software
-
-
-
-
-testing  The group was familiar with exploratory and manual functional testing from the class lectures but possessed no practical experience.
+Before undertaking this lab, the team members had a theoretical understanding of software testing from the class lectures but lacked practical experience. Their testing experience was limited to ad-hoc testing while developing programs during undergraduate and graduate courses. Furthermore, the team had no prior exposure to a professional issue tracker such as Jira.
 
 # High-level description of the exploratory testing plan
 
