@@ -16,19 +16,17 @@
 (When you finish writing, update the following list using right click, then
 “Update Field”)
 
-[1 Introduction	1](#introduction)
+[1 Introduction](#introduction)
 
-[2 High-level description of the exploratory testing plan	1](#_Toc439194678)
+[2 High-level description of the exploratory testing plan	1](#high-level-description-of-the-exploratory-testing-plan)
 
-[3 Comparison of exploratory and manual functional testing	1](#_Toc439194679)
+[3 Comparison of exploratory and manual functional testing	1](#comparison-of-exploratory-and-manual-functional-testing)
 
-[4 Notes and discussion of the peer reviews of defect reports	1](#_Toc439194680)
+[4 Notes and discussion of the peer reviews of defect reports	1](#notes-and-discussion-of-the-peer-reviews-of-defect-reports)
 
-[5 How the pair testing was managed and team work/effort was
-divided	1](#_Toc439194681)
+[5 How the pair testing was managed and team work/effort was divided](#how-the-pair-testing-was-managed-and-team-work/effort-was-divided)
 
-[6 Difficulties encountered, challenges overcome, and lessons
-learned	1](#_Toc439194682)
+[6 Difficulties encountered, challenges overcome, and lessons learned](#difficulties-encountered,-challenges-overcome,-and-lessons-learned)
 
 # Introduction
 
