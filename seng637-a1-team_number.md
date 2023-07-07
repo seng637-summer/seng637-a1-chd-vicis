@@ -27,7 +27,7 @@
 
 # Introduction
 
-In this lab, Team 1 of SENG-637 conducted software testing on an ATM simulation system, which can be accessed [here](https://github.com/seng637-summer/seng637-a1-chd-vicis/blob/main/seng637-a1-artifacts.zip).  The primary objective of the lab was to apply the lessons and techniques learned in the lectures to a practical software testing scenario. The team focused on achieving three specific goals:
+In this lab, Team 2 of SENG-637 conducted software testing on an ATM simulation system, which can be accessed [here](https://github.com/seng637-summer/seng637-a1-chd-vicis/blob/main/seng637-a1-artifacts.zip).  The primary objective of the lab was to apply the lessons and techniques learned in the lectures to a practical software testing scenario. The team focused on achieving three specific goals:
 1. Acquire practical experience in testing a software system
 2. Understand and gain experience in three different types of testing: exploratory, manual scripted, and regression testing
 3. Utilize and become familiar with a professional issue tracking system such as Jira 
