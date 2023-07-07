@@ -1,8 +1,8 @@
 # SENG 637 - Dependability and Reliability of Software Systems
 
-##Lab. Report \#1 – Introduction to Testing and Defect Tracking**
+## Lab. Report \#1 – Introduction to Testing and Defect Tracking
 
-| Group: Group Number      |
+| Group: 1      |
 |-----------------|
 | Jash Dubal                |   
 | Steven Duong              |   
