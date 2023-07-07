@@ -52,17 +52,50 @@ testing  The group was familiar with exploratory and manual functional testing f
 
 # High-level description of the exploratory testing plan
 
-Below summarizes the groups test plan for exploratory testing followed by the two pair groups.
-General Approach
-1. Familiarization with the ATM System
-2.    
+Below summarizes the groups test plan for exploratory testing followed by the two pair groups.  As testing was performed issues were created in jira to log potential bugs.
 
+General Approach
+1. Read and understand the system's high level requirements found in Appendix B and make note of potential areas for bugs 
+2. Familiarization with the ATM System - perform a single run-through via a transaction (deposit) as described in the README
+3. Explore standard functionalities of a user such as performing transactions
+4. Explore standard functionalities of an operator such as entering how many $20 bills are in the ATM
+5. Explore non-standard functionalities and attempt operations that shouldn't be allowed
 
 Test Cases & ATM Requirements Targeted
 Card Validation & Pin Verification
 -    Test valid card
 -    Test invalid card
 -    Test valid card and valid PIN
+-    Test valid card with invalid PIN
+-    Test card retention after three consecutive invalid PIN attempts
+
+Cash Withdrawal
+-    Test successful and insufficient balance cash withdrawal from valid savings, checking, and money market accounts
+
+Deposit Processing
+-    Test deposit to all the valid accounts
+
+Money Transfer
+-    Test successful transfer between two valid accounts
+-    Test transfer with an invalid source or destination account
+-    Test transfer with insufficient balance
+
+Balance Inquiry
+-    Test balance inquiry for a invalid accound
+-    Test balance inquiry for an invalid account
+
+Transaction Cancellation
+-    Test transaction cancellation using the Cancel key
+-    Test transaction cancellation at various stages (withdrawal, deposit, transfer)
+
+User Interface
+-    Test keyboard input for all transaction types
+-    Test display output for transaction status, prompts, and error messages
+
+Receipt Generation
+-    Test receipt generation for successful transactions
+-    Test receipt content for accuracy (date, time, location, transaction details, balances)
+
 
 
 # Comparison of exploratory and manual functional testing
