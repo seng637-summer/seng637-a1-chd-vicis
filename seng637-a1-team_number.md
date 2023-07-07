@@ -116,7 +116,7 @@ Text…
 
 Below is a summary of the difficulties encountered, challenges overcome and lessons learned.
 
-## Difficulties encountered
+### Difficulties encountered
 -    Ensuring that duplicate issues of the same type were not entered in Jira posed a significant challenge. Although both teams collaborated, a substantial amount of effort was dedicated to reviewing each other's bugs and consolidating the lists
 -    Comparing bugs often revealed similar but not identical data captured by both groups. This made it difficult to determine the exact cause of a bug. For instance, in bug A1-7, where an invalid pin freezes the system, it was not immediately clear whether the issue was due to the pin being too long or simply an incorrect number, as the teams used different pins.
 -    Analyzing the differences between the various types of testing was not straightforward. While it was evident that all testing phases were important, it remained unclear which testing phases might be more effective in terms of bug severity or types (user vs. operator). Although not feasible for a lab, with a much larger software program and proper metadata, it might have been easier to identify the most critical testing phase for finding "system-breaking" bugs and allocate time accordingly.
