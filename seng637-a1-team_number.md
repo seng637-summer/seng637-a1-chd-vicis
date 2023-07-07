@@ -2,7 +2,7 @@
 
 ## Lab. Report \#1 – Introduction to Testing and Defect Tracking
 
-| Group: 1      |
+| Group: 2      |
 |-----------------|
 | Jash Dubal                |   
 | Steven Duong              |   
