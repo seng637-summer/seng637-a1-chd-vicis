@@ -2,7 +2,7 @@
 
 ## Lab. Report \#1 – Introduction to Testing and Defect Tracking
 
-| Group: 2      |
+| Group: SENG637- 2   |
 |-----------------|
 | Jash Dubal                |   
 | Steven Duong              |   
@@ -34,25 +34,19 @@ In this lab, Team 2 of SENG-637 conducted software testing on an ATM simulation 
 
 Throughout the lab, the team successfully conducted exploratory, manual scripted, and regression testing, which resulted in the discovery of 21 unique bugs. These bugs were documented using Jira, a professional issue tracking system. The team found the experience of using Jira valuable, collaborated on pair testing for the first time, and composed practical bug reports. Additionally, they gained insights into the strengths and weaknesses of various testing approaches and how they complement each other.
 
-Before undertaking this lab, the team members had a brief understanding of software testing including exploratory and manual function testing from the class lectures but lacked practical experience. More specifically the team members went through examples in class on how to perform a manual scripted test by recording the inital state, expected output vs actual and how to reproduce the bug of a software system.  Aside from the class examples the team's only testing experience was limited to ad-hoc testing while developing programs during undergraduate and graduate courses. Furthermore, the team had no prior exposure to a professional issue tracker such as Jira.
+Before undertaking this lab, the team members had a brief understanding of software testing including exploratory and manual function testing from the class lectures but lacked practical experience. More specifically the team members went through examples in class on how to perform a manual scripted test by recording the initial state, expected output vs actual and how to reproduce the bug of a software system.  Aside from the class examples the team's only testing experience was limited to ad-hoc testing while developing programs during undergraduate and graduate courses. Furthermore, the team had no prior exposure to a professional issue tracker such as Jira.
 
 # High-level description of the exploratory testing plan
 
-Below summarizes the groups test plan for exploratory testing followed by the two pair groups.  As testing was performed issues were created in jira to log potential bugs.
+Below summarizes the groups test plan for exploratory testing followed by the two pair groups.  As testing was performed issues were created in Jira to log bugs and issues.
 
 ### General Approach
-1. Read and understand the system's high level requirements found in Appendix B and make note of potential areas for bugs 
-2. Familiarization with the ATM System - perform a single run-through via a transaction (deposit) as described in the README
-3. Explore standard functionalities of a user such as performing transactions
-4. Explore standard functionalities of an operator such as entering how many $20 bills are in the ATM
-5. Explore non-standard functionalities and attempt operations that shouldn't be allowed
+The team's general approach to exploratory testing was to understand the SUT (system under test) and its general requirements, expected outcomes and functionalities, set expectations for writing bug reports in Jira and then use the software and perform "run-throughs" to familiarize each team with the software and identify bugs.  Before beginning the exploratory testing and after reading Appendix B to understand the SUT requirements, the team developed a general list of test cases and operations to target, but it should be noted these were kept very general and non-prescriptive as the focus is on exploring the software and allowing the team flexibility to deviate from standard operations and focus on edge-cases or any other focus that seems critical during the testing.  Below is the list of general test cases the team's used as guides.
 
 ### Test Cases & ATM Requirements Targeted
 Card Validation & Pin Verification
--    Test valid card
--    Test invalid card
--    Test valid card and valid PIN
--    Test valid card with invalid PIN
+-    Test valid/invalid cards
+-    Test valid/invalid PINs
 -    Test card retention after three consecutive invalid PIN attempts
 
 Cash Withdrawal
@@ -67,7 +61,7 @@ Money Transfer
 -    Test transfer with insufficient balance
 
 Balance Inquiry
--    Test balance inquiry for a invalid accound
+-    Test balance inquiry for a invalid account
 -    Test balance inquiry for an invalid account
 
 Transaction Cancellation
@@ -82,27 +76,28 @@ Receipt Generation
 -    Test receipt generation for successful transactions
 -    Test receipt content for accuracy (date, time, location, transaction details, balances)
 
+Operator
+-    Test turning on/off the ATM system
+-    Testing loading the system with money  
+
 # Comparison of exploratory and manual functional testing
 
-There were several difference between the exploratory and manual functional testing.  The two main difference were, the majority of the bugs were found during the exploratory phase and the types of bugs found during the exploratory were more severe.  It is logical to find more bugs during the exploritory phase because it was performed first and there was more freedom to devitate from the different use cases.  While the SUT (system under test) use cases were fairly exhaustive they did not cover every possible type of operation performed, such as entering an invalid keyboartd input when selecting a transaction type (issue A1-15).  In this case there is no MFT that would correspond to this operation so it wouldn't have been found unless an even more exhaustive MFT list would have to have been created.  Creating exhaustive lists are challengeing especially given that they are typically centered around use-cases which by it's nature highlights typical operations as opposed to atypical.
+There were several differences between the exploratory and manual functional testing in terms of results and how efficient each type was to perform.  The most noticeable difference between the two types was the exploratory testing was noted to be more challenging and required significant critical thinking whereas MFT was extremely straight forward, efficient, less time consuming and easier to navigate.  It's believed that exploratory testing was more challenging because it was done first so the team's had to familiarize themselves with the software, so expected outcomes were not as obvious upon first use.  Exploratory testing also required more critical thinking because when bugs were found it wasn't always obvious what set of factors led to the bug because the exact set of operations that created the bug were done ad-hoc and so the team's had to think critically about the state of the SUT, the inputs and if other factors such as previous actions may have led to a bug whereas in MFT the state of the SUT, the exact input and expected outcome is already well defined.  Another reason exploratory testing was considered more difficult was because the team's ended up in edge-case scenarios and so the exact outcome may not have been known even with Appendix B.  As a result, the exploratory testing was considered more difficult and required more focus while the MFT was considered extremely efficient, easy to navigate and less time consuming.
 
-The other noticable difference between the bugs found in the exploratory vs the manual function testing was that the exploratory bugs often found more severe bugs.  For example MFT found only one major issue (program freezing or crashing) while exploratory testing found three (MFT-6 & A1-15, A1-10, A1-7).  This seems logical given that during software development one of the main challenges is accounting for all edge-cases and it is especially difficult given how many challenges arise when developing software such as requirement changes, team changes, merging of different code bases, reliance on libraries that are not fully visible or understood and multiple builds for different systems and enviroments to name a few.  Given these challenges, software testing and especially exploratory testing is one of the only places that edge-cases can realistically be identified.
+In terms of results, it was noted that the majority of the bugs were found during the exploratory phase and the types of bugs found during the exploratory were more severe.  It is logical to find more bugs during the exploratory phase because it was performed first and there was more freedom to deviate from the different use cases.  While the MFT use cases were exhaustive they did not cover every type of operation performed, such as entering an invalid keyboard input when selecting a transaction type (issue A1-15).  In this case there is no MFT that would correspond to this operation so it would not have been found unless an even more exhaustive MFT list would have to have been created.  Creating exhaustive lists are challenging especially given that they are typically centered around use-cases which by its nature highlights typical operations as opposed to atypical.
 
-A similarity between exploratory and MFT was that both found a significany amount of benign bugs such as showing incorrect information (MFT-14 & A1-13).  This is expected given that begnign bugs are likely to be the most common and both testing schemes are suited for finding these types of bugs.
+The other noticeable difference between the bugs found in the exploratory vs the manual function testing was that the exploratory bugs found more severe bugs.  For example, MFT found only system breaking issue (program freezing or crashing) while exploratory testing found four (MFT-6/A1-23 & A1-2, A1-7, A1-10, A1-15).  This seems logical given that during software development one of the main challenges is accounting for all edge-cases and it is especially difficult given how many challenges arise when developing software such as requirement changes, team changes, merging of different code bases, reliance on libraries that are not fully visible or understood and multiple builds for different systems and environments to name a few.  Given these challenges, software testing and especially exploratory testing is one of the only places that edge-cases can realistically be identified.
 
 # Notes and discussion of the peer reviews of defect reports
-Did both teams find the reports to be the same?
-Were there different approaches?
-How did you compare after finishing?
-Two jira project created and then merged?
+During the peer reviews of the defect reports there was surprisingly little discussion with respect to understanding each other team's bug reports because the format of the bug report was determined beforehand.  Only minor changes to wording was noted.  Any changes to bug reports during the peer review was centered around describing the state of the SUT to ensure more consistency between reports.  It was also noted that Jira was straightforward and easy to use with both team's noting how efficient and simple it was to use.
 
 # How the pair testing was managed and team work/effort was divided 
 
 Pair testing was organized by dividing the group into two subgroups: one with two members and the other with three members. Prior to starting any testing, all five members gathered and collectively reviewed the entire README file to ensure a shared understanding of the testing plan and laboratory requirements. Subsequently, each member created a Jira account and familiarized themselves with the issue tracker. Afterward, a project was created in Jira, and each member experimented with creating, editing and deleting issues to establish familiarity.  Once the lab requirements and Jira were familiar to everyone, the two subgroups commenced the exploratory testing phase. They allocated approximately 30 minutes for this phase, excluding the time spent on writing issues in Jira. After completing the exploratory testing, the entire group reconvened to review each other's issue lists and eliminate any duplicates. This was done systematically by going through the first subgroup's list, one item at a time, and cross-referencing it with the second subgroup's list to ensure no duplication.
 
-For the MFT (Multiple Feature Testing), the group continued in the same pair subgroups. The first subgroup handled test cases 1-20, while the second subgroup tackled cases 21-40. As new bugs were discovered, they were compared against the existing list and added only if they were unique. Once all the test cases were completed, the entire group gathered to discuss the identified issues and provide feedback (as noted in the previous section).
+For the MFT, the group continued in the same pair subgroups. The first subgroup handled test cases 1-20, while the second subgroup tackled cases 21-40. As new bugs were discovered, they were compared against the existing list and added only if they were unique. Once all the test cases were completed, the entire group gathered to discuss the identified issues and provide feedback (as noted in the previous section).  The testers also went through all the bugs found in version 1.0 individually to ensure consistency.
 
-Finally the regression testing followed a similar approach to MFT, with the subgroups dividing the issues evenly and retesting them on the new version of the ATM (version 1.1). If an issue was resolved, it was marked as such in Jira. If it remained unresolved, a comment was added to indicate its persistence in version 1.1. Additionally, comments were included to highlight any discrepancies between the systems if the issue was not resolved. For instance, issue A1-6 remained unresolved but with a difference expected outcome so the issue was changed to reflect this.
+Finally the regression testing began with the entire team going through all the existing bugs in Jira and testing them in version 1.1 and making note if they were resolved or fixed.  Then the team perform the MFT again on all 40 cases in a similar approach as before, with the subgroups dividing the issues evenly and retesting them on the new version of the ATM. Throughout the regression testing if an issue was resolved, it was marked as such in Jira via the status button ("To Do" vs "Done"). If it remained unresolved, a comment was added to indicate its persistence in version 1.1. Additionally, comments were included to highlight any discrepancies between the systems if the issue was not resolved. For instance, issue A1-11 remained unresolved but with a difference expected outcome, so the issue was changed to reflect this.
 
 Throughout the testing process, if either pair group had any questions or concerns about the overall process, they reached out to the other group via Discord to clarify their questions. Both groups ensured that they performed each testing phase in parallel to minimize deviations in the testing methodology.
 
@@ -123,6 +118,8 @@ Throughout the testing process, if either pair group had any questions or concer
 -    Regression testing was greatly streamlined because each group divided the list of issues and tested them separately.
 
 ### Lessons learned
+-    Exploratory testing takes far more critical thinking than MFT
+-   MFT is more efficient, less time consuming and less ambiguous when recording results than exploratory
 -    Establishing a specific outline for bug issues during the exploratory phase is crucial to avoid missing information when merging results from different pairs/groups.
 -    Regular communication between pair groups during exploratory sessions helps prevent significant discrepancies in issue descriptions before too many issues were logged.
 -    Extending the duration of exploratory testing beyond the suggested 30 minutes, as mentioned in the README, could have been beneficial, as it appeared to be the most productive testing phase
