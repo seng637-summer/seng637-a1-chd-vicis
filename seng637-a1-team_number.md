@@ -120,7 +120,6 @@ Throughout the testing process, if either pair group had any questions or concer
 -    Avoiding duplicate bug entries in Jira during manual function testing required diligent searching to ensure that bugs were not already captured during exploratory testing.
 -    Keeping track of all the high-level system requirements proved time-consuming and necessitated frequent referencing of Appendix B.
 -    The testing process took longer than anticipated, leading to rescheduling of meetings to cover the entire test suite. However, the team managed to complete the testing in a timely manner.
--    Learning and becoming familiar with Jira was a straightforward task that was easily overcome.
 -    Regression testing was greatly streamlined because each group divided the list of issues and tested them separately.
 
 ### Lessons learned
