@@ -36,7 +36,7 @@ Throughout the lab, the team successfully conducted exploratory, manual scripted
 
 Before undertaking this lab, the team members had a brief understanding of software testing including exploratory and manual function testing from the class lectures but lacked practical experience. More specifically the team members went through examples in class on how to perform a manual scripted test by recording the initial state, expected output vs actual and how to reproduce the bug of a software system.  Aside from the class examples the team's only testing experience was limited to ad-hoc testing while developing programs during undergraduate and graduate courses. Furthermore, the team had no prior exposure to a professional issue tracker such as Jira.
 
-![Jira Project]([path/to/image.jpg](https://github.com/seng637-summer/seng637-a1-chd-vicis/blob/main/media/JiraProject.png))
+![Jira Project](https://github.com/seng637-summer/seng637-a1-chd-vicis/blob/main/media/JiraProject.png)
 Screenshot of Jira Project
 
 # High-level description of the exploratory testing plan
